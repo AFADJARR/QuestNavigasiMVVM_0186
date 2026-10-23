@@ -31,8 +31,7 @@ import com.example.p6.R
 @Composable
 fun FormIsian(
     jenisK: List<String> = listOf("Laki-laki", "Perempuan"),
-    OnSubmitBtnCLick: () -> Unit,
-    foreach: List<String>.(Any?) -> Unit
+    OnSubmitBtnCLick: () -> Unit
 ) {
     Scaffold(
         modifier = Modifier,

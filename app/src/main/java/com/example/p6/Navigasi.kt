@@ -29,8 +29,7 @@ fun DataApp(
             modifier = Modifier.padding(isiRuang)){
             composable(route = Navigasi.FormulirSaya.name){
                 FormIsian(
-                    OnSubmitBtnCLick = {
-                        navController.navigate(Navigasi.Detail.name)
+                    OnSubmitBtnCLick = { navController.navigate(Navigasi.Detail.name)
                     }
                 )
             }
@@ -46,5 +45,5 @@ fun DataApp(
 private fun cancelAndBackToFormlirSaya(
     navController: NavHostController
 ){
-    navController.popBackStack(Navigasi.FormulirSaya.name, inclusive = false))
+    navController.popBackStack(Navigasi.FormulirSaya.name, inclusive = false)
 }
