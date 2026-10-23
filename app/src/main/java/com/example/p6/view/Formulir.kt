@@ -33,7 +33,7 @@ fun FormIsian(
         modifier = Modifier,
         {
             TopAppBar(
-                title = { Text(stringResource(id = R.string.Home), color = Color.White) },
+                title = { Text(stringResource(id = R.string. Home), color = Color.White) },
                 colors = TopAppBarDefaults.mediumTopAppBarColors(
                     colorResource(id = R.color.teal_700)
                 )
@@ -77,7 +77,14 @@ fun FormIsian(
                     .width(250.dp),
                     thickness = 1.dp,
                     color = Color.Red
-
+            )
+            OutlinedTextField(
+                value = " ",
+                singleLine = true,
+                modifier = Modifier
+                    .width(250.dp),
+                label = { Text(text = "Alamat") },
+                onValueChange = {},
             )
         }
     }
