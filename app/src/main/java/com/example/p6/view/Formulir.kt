@@ -25,6 +25,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.example.p6.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -37,7 +38,7 @@ fun FormIsian(
         modifier = Modifier,
         {
             TopAppBar(
-                title = { Text(stringResource(id = R.string. Home), color = Color.White) },
+                title = { Text(stringResource(id = R.string.Home), color = Color.White) },
                 colors = TopAppBarDefaults.mediumTopAppBarColors(
                     colorResource(id = R.color.teal_700)
                 )
@@ -96,7 +97,7 @@ fun FormIsian(
                     .padding(all = 25.dp),
                 onClick = OnSubmitBtnCLick
             ){
-
+                Text(stringResource(id = R.string.Submit))
             }
         }
     }
